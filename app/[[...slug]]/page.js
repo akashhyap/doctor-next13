@@ -18,7 +18,7 @@ export default async function Page({ params }) {
     <div className="relative">
       <Config blok={config?.story?.content} />
       <div className="min-h-screen">
-        <StoryblokStory story={data.story} />
+        <StoryblokStory story={data.story} full_slug={data.story?.full_slug} />
       </div>
       <Footer blok={config?.story?.content} />
     </div>

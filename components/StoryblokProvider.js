@@ -26,6 +26,9 @@ import Women from "./Women";
 import Treatment from "./Treatment";
 import Surgery from "./Surgery";
 import ButtonLink from "./ButtonLink";
+import TableOfContent from "./TableOfContent";
+import ArticleContentArea from "./ArticleContentArea"
+import Images from "./Images"
 
 /** 3. Initialize it as usual */
 storyblokInit({
@@ -55,6 +58,9 @@ storyblokInit({
     treatment: Treatment,
     surgery: Surgery,
     buttonLink: ButtonLink,
+    tableOfContent: TableOfContent,
+    "article-content-area": ArticleContentArea,
+    images: Images,
   },
 });
 

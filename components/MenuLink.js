@@ -6,7 +6,7 @@ import { IoMdArrowDropdown, IoMdArrowDropup } from "react-icons/io";
 
 const MenuLink = ({ blok, closeMenu }) => {
   // console.log("menu", blok);
-  const hasSubMenu = blok?.menu?.length >= 0;
+  const hasSubMenu = blok?.menu?.length != 0;
   // console.log("hasSubMenu", hasSubMenu);
 
   return (

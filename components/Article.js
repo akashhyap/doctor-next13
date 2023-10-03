@@ -1,15 +1,13 @@
-import { storyblokEditable,StoryblokComponent } from "@storyblok/react/rsc";
+import ArticleHeader from "./ArticleHeader";
+import ArticleBody from "./ArticleBody";
 
-const Article = ({ blok }) => {
-  // console.log("blog", blok);
-
+const Blog = ({blok,full_slug}) => {
+  console.log("Article", blok);
   return (
-    <div className="py-10" {...storyblokEditable(blok)}>
-      {blok.body.map((nestedBlok) => {
-        return <StoryblokComponent blok={nestedBlok} key={nestedBlok._uid} />;
-      })}
-    </div>
+    <>
+      <ArticleHeader blok={blok} full_slug={full_slug} />
+      <ArticleBody blok={blok} />
+    </>
   );
 };
-
-export default Article;
+export default Blog;

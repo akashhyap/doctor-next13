@@ -11,9 +11,9 @@ const Hightlight = ({ blok }) => {
   return (
     <div
       {...storyblokEditable(blok)}
-      className={`relative flex items-center justify-center overflow-hidden min-h-[500px] my-20 ${blok.layout}`}
+      className={`hightlight relative flex items-center justify-center overflow-hidden min-h-[500px] my-20 ${blok.layout}`}
     >
-      <div className="container mx-auto px-4 md:px-3 max-w-7xl relative z-20">
+      <div className="container mx-auto px-4 md:px-3 max-w-6xl relative z-20">
         {blok.body.map((nestedBlok) => (
           <StoryblokComponent blok={nestedBlok} key={nestedBlok._uid} />
         ))}

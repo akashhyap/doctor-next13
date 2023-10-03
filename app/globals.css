@@ -2,10 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
-
+html,
 body {
     font-size: 20px;
     line-height: 38px;
+}
+
+@media screen and (max-width:767px) {
+    html {
+      overflow-x: hidden;
+    }
 }
 
 h1 {
@@ -74,4 +80,24 @@ h2 {
 
 .m-h-500px {
     @apply min-h-[500px]
+}
+
+.content_block {
+    @apply [&>h2]:text-2xl sm:[&>h2]:text-4xl lg:[&>h2]:text-4xl [&>h2]:font-semibold [&>h2]:pt-4 [&>p>img]:rounded-2xl [&>p]:text-lg [&>p]:py-4 [&>p]:leading-8 [&>h3]:text-2xl [&>h3]:font-semibold [&>ul]:mb-8 [&>ul]:list-disc [&>ul]:pl-4 [&>ul>li]:leading-8 [&>ol]:list-decimal [&>ol]:pl-4 [&>ol>li]:leading-8 mb-10 px-7 text-base md:text-lg
+}
+
+.hero .content_block p {
+    @apply leading-relaxed p-0
+}
+
+.hero .content_block {
+    @apply p-0
+}
+
+.hightlight .content_block {
+    @apply py-10
+}
+
+.hightlight .content_block p {
+    @apply leading-loose p-0
 }

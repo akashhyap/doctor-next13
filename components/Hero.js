@@ -6,7 +6,7 @@ const Hero = ({ blok }) => {
   console.log("blok hero", blok);
   return (
     <div
-      className={`relative flex items-center justify-center overflow-hidden ${blok.minHeight} ${blok.minWidth} overflow-hidden`}
+      className={`hero relative flex items-center justify-center overflow-hidden ${blok.minHeight} ${blok.minWidth} overflow-hidden`}
       {...storyblokEditable(blok)}
     >
       {blok?.backgroundImage?.filename && (
