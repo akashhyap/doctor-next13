@@ -3,49 +3,75 @@
 @tailwind utilities;
 
 
-body{
+body {
     font-size: 20px;
     line-height: 38px;
 }
+
 h1 {
     @apply text-4xl md:text-5xl lg:text-6xl lg:leading-snug mb-4 font-black
 }
+
 h2 {
     @apply text-3xl md:text-4xl lg:text-5xl lg:leading-snug mb-4 font-black
 }
+
 .g-cols-2 {
     @apply grid-cols-1 md:grid-cols-2
 }
+
 .g-cols-3 {
     @apply grid-cols-1 md:grid-cols-3
 }
+
 .g-cols-4 {
     @apply grid-cols-1 md:grid-cols-3 lg:grid-cols-4
 }
+
 .itemsCenter {
     @apply items-center
 }
+
+.itemsEnd {
+    @apply items-end
+}
+
 .textCenter {
     @apply text-center
 }
+
 .textRight {
     @apply text-right
 }
+
 .constrained {
     @apply lg:max-w-7xl lg:rounded-xl md:px-14
 }
-.constrained .grid_block{
-   @apply mt-0 mb-0
+
+.constrained .grid_block {
+    @apply mt-0 mb-0
 }
+
 .m-w-4xl {
     @apply max-w-[90%] md:max-w-4xl
 }
+
 .m-w-5xl {
     @apply max-w-[90%] md:max-w-5xl
 }
+
 .m-w-6xl {
     @apply max-w-[90%] md:max-w-6xl
 }
+
 .m-w-7xl {
     @apply max-w-[90%] md:max-w-7xl
+}
+
+.m-h-400px {
+    @apply min-h-[400px]
+}
+
+.m-h-500px {
+    @apply min-h-[500px]
 }

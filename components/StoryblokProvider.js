@@ -25,6 +25,7 @@ import InguinalHernia from "./InguinalHernia";
 import Women from "./Women";
 import Treatment from "./Treatment";
 import Surgery from "./Surgery";
+import ButtonLink from "./ButtonLink";
 
 /** 3. Initialize it as usual */
 storyblokInit({
@@ -53,6 +54,7 @@ storyblokInit({
     women: Women,
     treatment: Treatment,
     surgery: Surgery,
+    buttonLink: ButtonLink,
   },
 });
 
