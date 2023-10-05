@@ -47,12 +47,12 @@ export const generateMetadata = async ({ params }) => {
       siteName: hasSEOdata ? data?.story?.content?.seo[0]?.og_siteName : "Zamaripa",
       type: 'website',
     },
-    twitter: {
-      card: 'summary_large_image',
-      title: hasSEOdata ? data?.story?.content?.seo[0]?.twitter_title : "Zamaripa",
-      description: hasSEOdata ? data?.story?.content?.seo[0]?.og_description : "Zamaripa",
-      creator: '@trustseo',
-    },
+    // twitter: {
+    //   card: 'summary_large_image',
+    //   title: hasSEOdata ? data?.story?.content?.seo[0]?.twitter_title : "Zamaripa",
+    //   description: hasSEOdata ? data?.story?.content?.seo[0]?.og_description : "Zamaripa",
+    //   creator: '@trustseo',
+    // },
     // icons: {
     //  apple: [
     //     { url: '/apple-touch-icon.png' }
