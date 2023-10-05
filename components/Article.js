@@ -2,7 +2,7 @@ import ArticleHeader from "./ArticleHeader";
 import ArticleBody from "./ArticleBody";
 
 const Blog = ({blok,full_slug}) => {
-  console.log("Article", blok);
+  // console.log("Article", blok);
   return (
     <>
       <ArticleHeader blok={blok} full_slug={full_slug} />

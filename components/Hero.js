@@ -3,7 +3,7 @@ import Image from "next/image";
 import React from "react";
 
 const Hero = ({ blok }) => {
-  console.log("blok hero", blok);
+  // console.log("blok hero", blok);
   return (
     <div
       className={`hero relative flex items-center justify-center overflow-hidden ${blok.minHeight} ${blok.minWidth} overflow-hidden`}

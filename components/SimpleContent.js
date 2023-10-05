@@ -1,9 +1,9 @@
 import { storyblokEditable, StoryblokComponent } from "@storyblok/react/rsc";
 
 const SimpleContent = ({ blok }) => {
-  console.log("simple content", blok);
+  // console.log("simple content", blok);
   const tableOfContent = blok.body[0]?.component === "tableOfContent";
-  console.log("tableOfContent", tableOfContent);
+  // console.log("tableOfContent", tableOfContent);
   const margin = {
     marginTop: blok?.marginTop,
     marginBottom: blok?.marginBottom,
