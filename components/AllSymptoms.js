@@ -19,7 +19,7 @@ const AllSymptoms = async ({ blok }) => {
 
   return (
     <>
-      {blok?.content.map((nestedBlok) => {
+      {blok?.content?.map((nestedBlok) => {
         return <StoryblokComponent blok={nestedBlok} key={nestedBlok._uid} />;
       })}
       <div

@@ -40,13 +40,13 @@ export const generateMetadata = async ({ params }) => {
   return {
     title: hasSEOdata ? data?.story?.content?.seo[0]?.site_title : "Zamaripa",
     description: hasSEOdata ? data?.story?.content?.seo[0]?.site_description : "Zamaripa",
-    openGraph: {
-      title: data?.story?.content?.seo ? data?.story?.content?.seo[0]?.og_title : "Zamaripa",
-      description: hasSEOdata ? data?.story?.content?.seo[0]?.og_description : "Zamaripa",
-      url: hasSEOdata ? data?.story?.content?.seo[0]?.og_url : "",
-      siteName: hasSEOdata ? data?.story?.content?.seo[0]?.og_siteName : "Zamaripa",
-      type: 'website',
-    },
+    // openGraph: {
+    //   title: data?.story?.content?.seo ? data?.story?.content?.seo[0]?.og_title : "Zamaripa",
+    //   description: hasSEOdata ? data?.story?.content?.seo[0]?.og_description : "Zamaripa",
+    //   url: hasSEOdata ? data?.story?.content?.seo[0]?.og_url : "",
+    //   siteName: hasSEOdata ? data?.story?.content?.seo[0]?.og_siteName : "Zamaripa",
+    //   type: 'website',
+    // },
     // twitter: {
     //   card: 'summary_large_image',
     //   title: hasSEOdata ? data?.story?.content?.seo[0]?.twitter_title : "Zamaripa",
