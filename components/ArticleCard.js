@@ -17,7 +17,7 @@ const ArticleCard = ({ article, slug, category }) => {
   return (
     <>
       {!isPageComponent && (
-        <div className="blog_teaser flex flex-col w-full group bg-gray-100 p-5 rounded-xl transition duration-500 ease-in-out">
+        <div className="blog_teaser flex flex-col h-full w-full group bg-gray-100 p-5 rounded-xl transition duration-500 ease-in-out">
           {article?.body?.map((item) => {
             // console.log(item);
             switch (item.component) {

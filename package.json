@@ -7,8 +7,6 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "test": "jest",
-    "test:watch": "jest --watchAll",
     "proxy": "mkcert -install && mkcert localhost && local-ssl-proxy --source 3010 --target 3000 --cert localhost.pem --key localhost-key.pem"
   },
   "dependencies": {
@@ -24,6 +22,7 @@
     "next": "^13.4.18",
     "postcss": "8.4.23",
     "react": "^18.2.0",
+    "react-calendly": "^4.3.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.10.1",
     "react-scroll": "^1.8.9",
