@@ -8,7 +8,12 @@ const Contact = ({ blok }) => {
         <StoryblokComponent blok={nestedBlok} key={nestedBlok._uid} />
       ))}
       <div className="inline-widget">
-        <InlineWidget url="https://calendly.com/akash-kash/30min" />
+        <InlineWidget
+          url="https://calendly.com/akash-kash/30min"
+          styles={{
+            height: "1000px",
+          }}
+        />
       </div>
     </div>
   );
